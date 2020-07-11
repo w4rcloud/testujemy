@@ -1,2 +1,0 @@
-# testujemy
-testowe repozytorium 
