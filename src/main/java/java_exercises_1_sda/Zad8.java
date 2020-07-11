@@ -7,9 +7,11 @@ public class Zad8 {
     public static void checkIfArithmeticProgression (int[] numbers){
         int difference = numbers[0] - numbers[1];
 
-        for (int i = 1; i < numbers.length; i++) {
+        for (int i = 1; i <= numbers.length; i++) {
             if (numbers[i] - numbers[i+1] == difference){
+
                 System.out.println(true);
+
         } else {
                 System.out.println(false);
             }
@@ -18,7 +20,7 @@ public class Zad8 {
     }
 
     public static void main(String[] args) {
-        int[] numbers = {1, 3, 5};
+        int[] numbers = {1, 3, 5, 7};
         checkIfArithmeticProgression(numbers);
     }
 }
