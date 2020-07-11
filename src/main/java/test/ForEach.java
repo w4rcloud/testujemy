@@ -2,6 +2,7 @@ package test;
 
 public class ForEach {
 
+
     public static String makeShoppingList (String[] shoppingList){
         String list = "";
         for (String name : shoppingList) {
