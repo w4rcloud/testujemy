@@ -8,17 +8,17 @@ package java_exercises_1_sda;
 // Zmodyfikuj powyższe żeby wyświetlało ten kawałek tabliczki dla liczby zadanej w
 //parametrze.
 
-public class Zad1 {
+public class Zad1A {
 
-    public static void multiply(int number) {
-        for (int i = 1; i < 5; i++) {
-            System.out.println(number + " x " + i + " = " + number * i);
+    public static void multiplicationTable(int number1, int range) {
+        int result = 0;
+        for (int i = 1; i <= range; i++) {
+            result = number1 * i;
+            System.out.println(""+ i + " x " + number1 + " = " + result);
         }
     }
-
     public static void main(String[] args) {
-        multiply(6);
+        multiplicationTable(5, 5);
     }
-
 }
 

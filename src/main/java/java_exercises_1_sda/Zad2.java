@@ -19,7 +19,7 @@ public class Zad2 {
     }
 
     public static void main(String[] args) {
-        checkIfPrimeNumber(12);
+        checkIfPrimeNumber(121);
 
     }
 }

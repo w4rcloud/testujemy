@@ -13,6 +13,6 @@ public class Zad3 {
     }
 
     public static void main(String[] args) {
-        sumFromXToY(5,7);
+        sumFromXToY(10,20);
     }
 }
