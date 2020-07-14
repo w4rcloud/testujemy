@@ -31,7 +31,7 @@ public class Zad1 {
     public static int[] multiplyArrayValues(int[] array) {
         int[] multipliedArray = array;
 //        for (int index : array) {
-//            array[index] *= 2;
+//            array[index-1] *= 2;
 //        }
         for (int i = 0; i < array.length; i++) {
             array[i] *= 2;
