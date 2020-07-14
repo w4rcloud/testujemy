@@ -11,6 +11,8 @@ public class Zad9 {
         System.out.println("test total: " + total);
         float realNum = (float) number/mod;
         System.out.println("test real: " + realNum);
+
+        System.out.println();
         return number - (total * mod);
     }
 
