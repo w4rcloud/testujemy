@@ -5,21 +5,20 @@ package java_exercises_1_sda;
 
 public class Zad9 {
 
-    public static int myModulo(int number, int mod){
-        System.out.println("number: " + number + " mod: " + mod + ":");
-        int total = (int) number/mod;
-        System.out.println("test total: " + total);
-        float realNum = (float) number/mod;
-        System.out.println("test real: " + realNum);
-
-        System.out.println();
-        return number - (total * mod);
+    public static int myModulo(int number, int divider) {
+        int rest = 0;
+        return rest;
     }
 
     public static void main(String[] args) {
-        System.out.println(myModulo(11, 2));
-        System.out.println(myModulo(10, 2));
-        System.out.println(myModulo(17, 3));
+
+
+        int result1 = 17 / 3;
+        double result2 = 17 / 3;
+
+        System.out.println(result1);
+        System.out.println(result2);
+
     }
 }
 
