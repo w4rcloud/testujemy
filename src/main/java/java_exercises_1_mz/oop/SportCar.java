@@ -1,20 +1,33 @@
 package java_exercises_1_mz.oop;
 
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
 public class SportCar extends Car {
-//    public SportCar(String producer, String model, String color, int numberOfSeats, Engine engine) {
-//        this.producer = producer;
-//        this.model = model;
-//        this.color = color;
-//        this.numberOfSeats = numberOfSeats;
-//        this.engine = engine;
-//    }
 
-    public SportCar(String producer, String model, String color, int numberOfSeats, Engine engine) {
-        super(producer, color, model);
-            this.producer = producer;
-            this.model = model;
-            this.color = color;
-        }
+    private Engine engine;
 
+    public SportCar(String producer, String model, String color, Engine engine) {
+        super(producer, color, model); // Car ("constructor")
+        this.engine = engine;
     }
+
+    public SportCar(String producer, String model, String color, Engine engine, int numOfSeats){
+        super(producer, color, model, numOfSeats);
+        this.engine = engine;
+    }
+
+    @Override
+    public String toString() {
+        return "SportCar{" +
+                "engine=" + engine +
+                ", producer='" + producer + '\'' +
+                ", model='" + model + '\'' +
+                ", color='" + color + '\'' +
+                ", numberOfSeats=" + numberOfSeats +
+                '}';
+    }
+}
 

@@ -7,8 +7,8 @@ public class CircleAreaCalculator {
 
     public static double calculateAreaOfACircle(double radius) {
         double area = 0;
-        final double pi = Math.PI;
-        area = Math.pow(radius, 2) * pi;
+        final double PI = Math.PI;
+        area = Math.pow(radius, 2) * PI;
 
         return area;
     }
@@ -16,11 +16,8 @@ public class CircleAreaCalculator {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("AREA OF A CIRCLE CALCULATOR");
-        double radius = 0;
+        double radius = scanner.nextDouble();
         try {
-            System.out.print("Provide radius: ");
-            radius = scanner.nextDouble();
-
 
 
             System.out.print("Provide radius: ");
